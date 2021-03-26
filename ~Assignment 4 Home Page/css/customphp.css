@@ -1,0 +1,578 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+li{list-style: none;}
+
+.nav-head{
+    font-size: 0.8rem;
+}
+
+.fa{
+    color:#2fccd2;
+}
+
+.navnav{
+    color: white !important ;
+    font-weight: 500;
+    
+}
+
+.navnav img{
+    opacity: 0.7;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: linear-gradient(rgba(54, 124, 160, 0.3),rgba(54, 124, 160, 0.3)),url(Project/pic3.jpg); */
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3),rgba(0, 168, 255, 0.3)),url(../pic5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    clip-path: polygon(100% 0% , 100% 77% , 50% 100% , 0 75% , 0 0  );  /* to create polygon shape (x,y codinates) */
+}
+
+.nav-item .nav-link{
+    color: whitesmoke !important ;
+    font-weight: bolder;
+}
+
+.nav-item .nav-link :hover{
+    font-size: 1.2rem;
+    transition: 5ms;
+}
+
+.glyphicon{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.header-section{
+    /* position: relative; */
+    width: 100%;
+    height: inherit;
+    color: white;
+    /* text-align: center; */
+   
+}
+
+.center-div{
+    /* border: 2px solid black; */      /*This property was used just to check dimensions of center-div  */
+    width: 100%;   /* Width 100% is important or it will not take all of page width */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* 
+    This div class belongs to center div which also comes under header div element of start 
+     We have given position to it as relative and position to this div class as absolute and and set
+     trasform trabnslate property and top:50% left:50% and hence we vertically allign center div wrt main header
+     div 
+     Hence we can avoid writing postion relative at .header-section immediate parent to this div
+     */
+
+}
+
+.center-div p{
+    padding: 20px 0px;
+    font-size: 1.4rem;
+}
+
+.center-div h1{
+    padding-bottom: 0px;
+}
+
+
+p{
+    text-align: center;
+    font-weight: 500;
+} 
+
+.header-buttons{
+    text-align: center;
+    
+}
+
+.header-buttons a{
+    border: 1px solid #ffffff;
+    border-radius: 100px;
+    margin:0px 5px;
+    padding: 12px 35px;
+    /* padding-top: 12px;
+    padding-bottom:12px ;
+    padding-left: 12px;
+    padding-right: 12px; */
+
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    
+}
+
+.header-buttons a:hover{
+    color: #50d1c0;
+    background: rgb(80, 139, 130);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+/************ 3 col div start **************/
+.coldiv{
+    width: 100%;
+    height: auto;
+    /* margin: 100px 0 ; */
+}
+
+.coldiv-d{
+    background-color: white;
+    border: medium none;
+    padding:50px !important ;
+    transition: 0.3s;
+}
+
+.coldiv-d:hover{
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    transform: translateY(-20px);
+    color:#2c5461;
+}
+
+h2  {
+    font-size: 1em;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+    color: black; 
+}
+
+.coldiv-d h2{
+    font-size: 1em;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+    color: black !important ;  /* impoartant makes h2 present inside coldiv-d not to change color after hover  */
+}
+/************ 3 col div end **************/
+
+/*************** offers section start ***************/
+.row h3{
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.serviceoffers{
+    background-color: #f7f7f9;
+    padding: 50px 0;
+
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-emphasis: uppercase;
+
+}
+
+.names h3{
+    columns: #2e2e2e;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+}
+
+
+.servicediv h2{
+    font-size: 1em;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+    color: black; 
+}
+
+.servicediv .row{
+    margin: 0px;
+    padding:0px
+
+}
+
+.service-icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    height: 0.6rem;
+    margin-bottom: 25px;
+}
+
+/*************** offers section end ***************/
+
+/************** Projects Done START ***************/
+
+.project-work{
+    margin:100px 0;
+
+}
+
+.project-work h1{
+    font-size:2rem ;
+    
+}
+
+/************** Projects Done END ***************/
+
+
+/************** Pricing Start ***************/
+
+.pricing{
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background: linear-gradient(160deg,  #16c9f6 55% , #fff 0%);
+    z-index: -1;    
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card{
+    transition: 0.4s ease;   
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: white !important;
+    padding: 15px 0  !important;
+}
+
+.card-body{
+    padding:30px 0 !important;
+
+}
+
+.card-body li{
+    margin: 10px 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #606060;    
+}
+
+.card-footer{
+    background: white !important;
+    padding: 30px 0px !important;
+}
+
+.card-footer a{
+    border: 1px solid #50d1c0;;
+    border-radius: 100px;
+    margin:0px 5px;
+    padding: 12px 35px;
+
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    
+}
+
+.card:hover .card-footer a{
+    color: white;
+    background: #50d1c0;
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+.card:hover .card-header , .card:hover .money{
+    color: #50d1c0;
+}
+
+.card-second{
+    transform: translateY(-20px);
+}
+/************** Pricing End ***************/
+
+
+
+/************** HAppy Clients Start ***************/
+
+.happyclients{
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba (0,0,0,0.2);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;    
+}
+
+.box:hover{
+    background: #16c9f6;
+}
+
+.box:hover p{
+    color: white;
+
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6 !important;
+}
+
+.carousel-control-prev-icon {         /* sets relative position of corousel arrow  */
+    transform: translateX(-40px);
+    background-color: black;   
+}
+
+.carousel-control-next-icon{         /* sets relative position of corousel arrow  */
+    transform: translateX(40px);
+    background-color: black; 
+}
+              
+                 /* Important */
+.box a{
+    position: relative;    
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+ .box a::after{             /* inserts after anchor tag */
+    content: "\f10d";       /*inserts semicolon from font awsome */
+    font-family: FontAwesome;
+    width: 40px;    /* width and height of content */
+    height: 40px;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%); /*used to add background color to the content*/
+    color: white;  /* gives font color of content */
+    position: absolute;
+    top: 120%;  /* By hit and trial used to position after content relative to anchor tag which contains image  */  
+    left: 70%;  /* If these are not used then after content is inserted as bloack content in next line  */
+    border-radius: 50%;  /* makes after content spherical */
+    display:flex;      /* used to vertically align content inside content circle which we created */
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    font-size: 18px;
+    font-weight: 700;
+    color:#000;
+    margin-bottom: 10px;    
+}
+
+.box h2{
+    font-size: 13px;
+    font-size: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+/************** HAppy Clients END ***************/
+
+
+/************** COntact Us Start ***************/
+
+.contactus{
+    width: 100%;
+    height:100vh;
+    padding: 80px 0;
+    position: relative;    
+}
+
+.contactus::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient( 330deg,  #16c9f6 55% , #fff 0%);
+    z-index: -1; /* makes this before element go to back and hence it does nor cover anything that is every 
+                    thing is displayed on top of this  */ 
+}
+
+.form-button button{
+    border: 1px solid #50d1c0;;
+    border-radius: 100px;
+    margin:0px 5px;
+    padding: 12px 35px;
+
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent;   /*makes button invisible*/
+}
+
+form:hover .form-button button{
+    background: #fff;
+    color: #50d1c0;
+    font-weight: 700;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
+::placeholder{     /*Edit place holder in text areas*/
+    font-size: 0.85rem;
+
+}
+
+/************** COntact Us END ***************/
+
+
+
+/************** News Letter Start ***************/
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px 0;
+}
+
+.news-input{
+    border-radius: 100px 0px 0px 100px  !important;  /*border-radius : top_left top_right bottom_right bottom_left ;   */
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.btn2{
+    color: #fff;
+    background: #5bc0de;
+    border-radius:0px 100px 100px 0px ;  /*border-radius : top_left top_right bottom_right bottom_left ;   */
+    min-width: 120px;
+    min-height: 45px;
+}
+
+/************** News Letter END ***************/
+
+
+
+
+/************** Footer Start***************/
+
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background-color: #00abff;
+    position: relative;   
+}
+
+.footersection p {
+
+    color: #fff;
+
+}
+
+.footersection li a{
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.footersection h3{
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+
+}
+
+#myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: white;
+    background-color: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background: #606060;
+}
+
+
+
+
+
+/************** Footer END ***************/
+
+
+/************** Media Queries ***************/
+
+@media(max-width:768px){
+
+    .pricing,.happyclients,.contactus{
+        height: auto;
+        margin-top: 50px;
+
+    }
+
+    .card-second{
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

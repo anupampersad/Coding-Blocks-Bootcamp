@@ -1,0 +1,63 @@
+td,th{
+    border:2px solid black;
+    width: 50px;
+    border-radius: 5px;
+    /* margin: 10px 10px; */
+    padding: 5px;
+    background-color: #caf0f8;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+tr{
+    margin: 5px;
+}
+
+
+td:hover{
+    border-color: blue;
+    cursor: pointer;
+    background-color: white;
+}
+
+th:hover{
+    border-color: blue;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(65, 58, 100);
+
+}
+
+td:hover~td{
+    border-color: blue;
+    cursor: pointer;
+    background-color: white;
+}
+
+th:hover~th{
+    border-color: blue;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+.ab{
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); */
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #48cae4;
+    border-radius: 10px;
+}
+
+.outer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+
