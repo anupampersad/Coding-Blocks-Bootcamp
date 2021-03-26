@@ -1,0 +1,56 @@
+/* * {
+    box-sizing: border-box;
+  } */
+  
+  body {
+    font: bold 18px/21px Helvetica, Arial, sans-serif;
+  }
+
+  
+  dl {
+    margin: 0;
+    padding: 24px 0 0 0;
+  }
+  
+  dt {
+    background: #495057;
+    border-bottom: 1px solid #ced4da;
+    border-top: 1px solid #ced4da;
+    color: #FFF;
+    margin: 0;
+    padding: 5px 0 0 12px;
+    position: sticky;
+    top: 0px;
+  }
+  
+  dd {
+    font: bold 20px/45px Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0 0 0 12px;
+    white-space: nowrap;
+  }
+  
+  dd + dd {
+    border-top: 1px solid #CCC
+  }
+
+
+
+  .outer{
+      width:80vw;
+      height: 95vh;
+      margin: 0px auto;
+      border: 2px solid black;
+      padding: 0px 10px;
+      border-width: 1px;
+      top:0px;
+      overflow: hidden;
+      overflow-y:scroll
+
+
+  }
+
+.outest{
+    margin: 10px;
+
+  }
